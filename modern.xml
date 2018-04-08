@@ -285,40 +285,30 @@ original asset color: 00f0ff
 			<origin>0 0</origin>
 		</image>
 
-		<text name="md_grid">
+		<imagegrid name="gamegrid">
 			<pos>0.2 0.3</pos>
 			<size>0.605 0.5</size>
-		</text>
-		
+			<margin>0.03 0.04</margin>
+		</imagegrid>
+
+		<gridtile name="default">
+			<size>0.12875 0.23</size>
+			<backgroundImage>./assets/selector.png</backgroundImage>
+			<backgroundColor>00000000</backgroundColor>
+		</gridtile>
+
+		<gridtile name="selected">
+			<size>0.12875 0.23</size>
+			<backgroundColor>ffffff90</backgroundColor>
+		</gridtile>
+
 		<text name="md_title">
 			<color>ffffff</color>
 			<pos>0.02 0.179</pos>
 			<fontPath>./assets/font.ttf</fontPath>
 			<fontSize>0.03</fontSize>
 		</text>
-		
-		<image name="gridtile_background_selected" >
-			<path>./assets/selector.png</path>
-			<color>ffffff90</color>
-		</image>
-		
-		<image name="gridtile_background">
-			<path>./assets/selector.png</path>
-			<color>00000000</color>
-		</image>
-		
-		<text name="gridtile_text">
-			<color>00000000</color>
-		</text>
-		
-		<container name="gridRowsAndColumns">
-			<size>4 2</size>
-		</container>
-		
-		<container name="md_grid_margin">
-			<size>0.03 0.04</size>
-		</container>
-		
+				
 		<text name="md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
 			<color>ffffff</color>
 			<forceUppercase>0</forceUppercase>
